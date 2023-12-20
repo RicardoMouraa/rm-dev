@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+
+  <!--Particulas-->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <!--EmailJS-->
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon-rmdev.ico">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-80XVHS2NWN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-80XVHS2NWN');
+  </script>
+
+  <title>RM│DEVELOPER</title>
+  <meta name="description"
+    content="RM Developer: Soluções digitais personalizadas para elevar sua presença online. Criação de sites, otimização de SEO, e-commerce e muito mais. Transforme suas ideias digitais em realidade com RM Developer.">
+
+</head>
+
+<body>
+
+  <!-- Botão do tema -->
+  <button id="color-toggle" class="color-toggle-button">
+    <i id="theme-icon" class="fas fa-lightbulb"></i>
+  </button>
+
+  <!-- Botão do WhatsApp -->
+  <div class="whatsapp-button">
+    <a href="https://api.whatsapp.com/send?phone=5547992164395" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- Botão "Voltar ao Topo" -->
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+
+
+  <!-- HEADER -->
+  <header>
+    <div class="container flex-row">
+      <div class="header__logo">
+        <a href="#hero"><img id="header-logo-img" src="assets/img/logo.svg" alt="Logo"></a>
+      </div>
+      <nav>
+        <ul class="header__menu flex-row">
+          <li>
+            <a href="#hero">Início</a>
+          </li>
+          <li>
+            <a href="#about">Sobre</a>
+          </li>
+          <li>
+            <a href="#services">Serviços</a>
+          </li>
+          <li>
+            <a href="#projects">Projetos</a>
+          </li>
+          <li>
+            <a href="#team">Profissional</a>
+          </li>
+          <li>
+            <a href="#testimonials">Depoimentos</a>
+          </li>
+          <li>
+            <a href="#contact">Contato</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="right flex-center">
+        <a href="#contact" class="btn btn-secondary">Fale comigo</a>
+        <div class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- INÍCIO -->
+  <section id="hero" class="container flex-row">
+    <div id="particles-js"></div>
+    <div class="hero__content">
+      <h1 class="title">Materialize suas ideias digitais</h1>
+      <p class="text">
+        Inicie seu sucesso online com a RM DEV. Aqui, seu site ganha vida, destacando o melhor do seu negócio e
+        ajudando-o a crescer na internet.
+      </p>
+      <a href="#contact" class="btn btn-primary">Vamos Inovar Juntos!</a>
+    </div>
+    <div class="hero__img">
+      <img src="assets/img/hero.png" alt="">
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="about" class="container flex-center flex-column" data-aos="fade-up">
+    <h5 class="section-subheading" data-aos="fade-right">Soluções Digitais Sob Medida</h5>
+    <h2 class="section-heading text-center" data-aos="fade-left">Defina sua presença digital com RM DEV</h2>
+
+    <div class="features text-center">
+      <!-- Primeiro Card: Sites Entregues -->
+      <div class="feature" data-aos="fade-up-right">
+        <div class="feature__counter">
+          + de <span id="sitesCounter">10</span>
+        </div>
+        <h3 class="feature__title">Sites criados do ZERO</h3>
+        <div class="feature__text">
+          <p>Soluções web feitas sob medida, cada uma delas uma vitrine digital do seu negócio.</p>
+        </div>
+      </div>
+
+      <!-- Segundo Card: Projetos Concluídos -->
+      <div class="feature" data-aos="zoom-in">
+        <div class="feature__counter">
+          + de <span id="projectsCounter">18</span>
+        </div>
+        <h3 class="feature__title">Projetos Concluídos</h3>
+        <div class="feature__text">
+          <p>Executados com maestria em diversas tecnologias e plataformas.</p>
+        </div>
+      </div>
+
+      <!-- Terceiro Card: Clientes Satisfeitos -->
+      <div class="feature" data-aos="fade-up-left">
+        <div class="feature__counter">
+          + de <span id="clientsCounter">26</span>
+        </div>
+        <h3 class="feature__title">Clientes Satisfeitos</h3>
+        <div class="feature__text">
+          <p>Pelo mundo com suas expectativas superadas e suas marcas fortalecidas.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about__details flex-center" data-aos="flip-left">
+      <div class="about__details-content">
+        <h1>Personalizando o amanhã digital</h1>
+        <p>Em 2023, a RM DEV emergiu com uma missão singular: elevar negócios em todo o Brasil ao patamar digital com
+          sites que não só apresentam, mas performam. Especialista em e-commerce, websites corporativos e landing pages
+          que não apenas atraem, mas convertem, a RM DEV é a força criativa por trás de soluções web que refletem a
+          individualidade e as aspirações de cada marca, empresa ou profissional. Aqui, cada projeto é mais que uma
+          entrega; é a materialização da sua visão digital, esculpida com precisão técnica e uma estética inovadora.</p>
+        <a href="#contact" class="btn btn-primary">Vamos Criar o Seu?</a>
+      </div>
+      <div class="about__details-img">
+        <img src="assets/img/about.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="services">
+    <div class="container">
+      <h5 class="section-subheading" data-aos="fade-up" data-aos-duration="100">Serviços Integrados para Impulsionar
+        seu Negócio</h5>
+      <h2 class="section-heading right" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+        Soluções completas para seu negócio
+      </h2>
+
+      <div class="services">
+        <!-- Cada serviço com uma animação mais suave e duração maior -->
+        <div class="service" data-aos="fade-right" data-aos-delay="100" data-aos-duration="700"
+          data-aos-easing="ease-out-quart">
+          <div class="service__icon">
+            <img src="assets/img/sites.png" alt="criacao de sites">
+          </div>
+          <h3 class="services__title">Criação de Sites Personalizados</h3>
+          <p class="service__text">
+            Desenvolvimento de sites sob medida para atender às suas necessidades exclusivas.
+          </p>
+        </div>
+
+        <div class="service" data-aos="fade-left" data-aos-delay="200" data-aos-duration="700"
+          data-aos-easing="ease-out-quart">
+          <div class="service__icon">
+            <img src="assets/img/otimizacao.png" alt="otimizacao de sites">
+          </div>
+          <h3 class="services__title">Otimização de Sites</h3>
+          <p class="service__text">
+            Melhoria do desempenho e velocidade do seu site para uma experiência melhor do usuário.
+          </p>
+        </div>
+
+        <div class="service" data-aos="fade-right" data-aos-delay="300" data-aos-duration="700"
+          data-aos-easing="ease-out-quart">
+          <div class="service__icon">
+            <img src="assets/img/customizacao.png" alt="customizacao avancada">
+          </div>
+          <h3 class="services__title">Customizações Avançadas</h3>
+          <p class="service__text">
+            Personalizações avançadas para atender às suas necessidades específicas.
+          </p>
+        </div>
+
+        <div class="service" data-aos="fade-left" data-aos-delay="400" data-aos-duration="700"
+          data-aos-easing="ease-out-quart">
+          <div class="service__icon">
+            <img src="assets/img/suporte.png" alt="suporte">
+          </div>
+          <h3 class="services__title">Suporte Técnico</h3>
+          <p class="service__text">
+            Suporte técnico especializado para manter seu site funcionando sem problemas.
+          </p>
+        </div>
+
+        <div class="service" data-aos="fade-right" data-aos-delay="500" data-aos-duration="700"
+          data-aos-easing="ease-out-quart">
+          <div class="service__icon">
+            <img src="assets/img/seo.png" alt="seo">
+          </div>
+          <h3 class="services__title">SEO Personalizado</h3>
+          <p class="service__text">
+            Estratégias de SEO adaptadas para melhorar a visibilidade do seu site.
+          </p>
+        </div>
+
+        <div class="service" data-aos="fade-left" data-aos-delay="600" data-aos-duration="700"
+          data-aos-easing="ease-out-quart">
+          <div class="service__icon">
+            <img src="assets/img/ecommerce.png" alt="desenvolvimento de ecommerce">
+          </div>
+          <h3 class="services__title">Desenvolvimento de E-commerce</h3>
+          <p class="service__text">
+            Criação de lojas online personalizadas para seus produtos ou serviços.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projects">
+    <div class="container">
+      <h5 class="section-subheading" data-aos="fade-up">Projetos Reais</h5>
+      <h2 class="section-heading" data-aos="fade-up" data-aos-delay="100">
+        Descubra a inovação autêntica em soluções de problemas
+      </h2>
+      <div class="projects">
+        <!-- Projeto 1 -->
+        <div class="project">
+          <div class="project__img" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/projeto-1-rom.png" alt="">
+          </div>
+          <div class="project__content" data-aos="fade-up" data-aos-delay="120">
+            <h3 class="project__category">Desenvolvimento Personalizado</h3>
+            <h3 class="project__title">
+              E-COMMERCE ROM DIGITAL TECH (Dropshipping)
+            </h3>
+            <p class="project__text">
+              A ROM é uma vitrine digital projetada para impulsionar vendas e encantar clientes. Desenvolvido do zero, o
+              site combina design atraente com uma experiência de usuário fluida e segura, ideal para quem busca um site
+              de dropshipping eficiente e confiável.
+            </p>
+            <a href="https://www.romdigitaltech.com.br/" target="_blank" class="btn btn-secondary">Ver site</a>
+          </div>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="project">
+          <div class="project__img" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/projeto-2-tread.png" alt="">
+          </div>
+          <div class="project__content" data-aos="fade-up" data-aos-delay="220">
+            <h3 class="project__category">Desenvolvimento Personalizado</h3>
+            <h3 class="project__title">
+              E-COMMERCE TREAD SKATEBOARD
+            </h3>
+            <p class="project__text">
+              Desenvolvido para oferecer uma experiência única, o site reflete a essência do skateboarding com design
+              intuitivo e uma plataforma de compras segura e dinâmica. Navegue, escolha e compre com facilidade.
+            </p>
+            <a href="https://www.treadskateboard.com.br/" target="_blank" class="btn btn-secondary">Ver site</a>
+          </div>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="project">
+          <div class="project__img" data-aos="fade-up" data-aos-delay="300">
+            <img src="assets/img/projeto-3-copfy.png" alt="">
+          </div>
+          <div class="project__content" data-aos="fade-up" data-aos-delay="320">
+            <h3 class="project__category">Desenvolvimento personalizado</h3>
+            <h3 class="project__title">
+              Portal Copfy: E-commerce, blog e mais...
+            </h3>
+            <p class="project__text">
+              Desenvolvido para ser mais do que apenas um e-commerce. Ele é um portal completo que reúne um blog
+              informativo, uma plataforma de vendas online e um diretório de serviços, tudo em um único ambiente. A
+              ideia foi criar um espaço onde os usuários pudessem não apenas comprar produtos, mas também se informar,
+              explorar e descobrir.
+            </p>
+            <a href="https://www.home.copfy.com.br/" target="_blank" class="btn btn-secondary">Ver site</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFISSIONAL -->
+  <section id="team" class="container">
+    <h5 class="section-subheading text-center" data-aos="fade-up">Conheça o Profissional</h5>
+    <h2 class="section-heading left right text-center" data-aos="fade-up" data-aos-delay="100">Experiência e Dedicação
+      em Desenvolvimento Web</h2>
+
+    <div class="members">
+      <div class="member">
+        <div class="member__img" data-aos="fade-right" data-aos-delay="200">
+          <img src="assets/img/membro-rmdev.png" alt="Sua Foto">
+        </div>
+        <div class="member__content" data-aos="fade-left" data-aos-delay="300">
+          <h1>Ricardo Olszewski de Moura</h1>
+          <span>Desenvolvedor Web</span>
+          <p>Com início em 2021, me dedico ao desenvolvimento de soluções web inovadoras. Como estudante de Engenharia
+            de Software, combino conhecimento técnico com estética para criar sites excepcionais, focando na excelência
+            e satisfação do cliente.</p>
+          <div class="member__skills">
+            <h3 class="skills-title">Skills</h3>
+            <div class="skills-list">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+              </ul>
+              <ul>
+                <li>React Native</li>
+                <li>WordPress</li>
+                <li>Figma</li>
+                <li>Photoshop</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- DEPOIMENTOS -->
+  <section id="testimonials">
+    <div class="container flex-row">
+      <div class="testimonials-wrapper">
+        <p class="quotes" data-aos="zoom-in">
+          <i class="fas fa-quote-left"></i>
+        </p>
+        <p class="section-subheading" data-aos="fade-up" data-aos-delay="100">depoimentos</p>
+        <div class="testimonials">
+          <div class="testimonial" data-aos="fade-up" data-aos-delay="200">
+            <h1 class="testimonial__title">
+              O melhor que eu já fiz foi descobrir a RMDev.
+            </h1>
+            <p class="testimonial__text">
+              Simplesmente transformador! A RM DEV trouxe uma nova vida ao meu e-commerce com soluções criativas e uma
+              execução impecável. A atenção aos detalhes e a agilidade no atendimento superaram todas as expectativas. É
+              a inovação e a personalização que qualquer marca precisa para se destacar no mercado digital.
+            </p>
+            <div class="testimonial__author">
+              <h3>Lucas Henrique</h3>
+              <p>Empreendedor</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-navigation">
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="testimonials__img" data-aos="fade-left" data-aos-delay="300">
+        <img src="assets/img/depoimento-lucas-henrique-rm-dev.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTATO -->
+  <section id="contact">
+    <div class="container">
+      <h5 class="section-subheading text-center" data-aos="fade-up">Fale comigo</h5>
+      <h2 class="section-heading text-center left right" data-aos="fade-up" data-aos-delay="100">Vamos transformar seu
+        sonho em site?</h2>
+      <div class="contact">
+        <!-- Formulário de Contato -->
+        <form id="my-form" class="contact__form" data-aos="fade-right">
+          <h1>Envie sua mensagem</h1>
+          <input type="text" name="user_name" placeholder="Nome completo" required>
+          <input type="email" name="user_email" placeholder="Seu melhor e-mail" required>
+          <input type="tel" name="user_phone" placeholder="WhatsApp" required>
+          <input type="text" name="subject" placeholder="Assunto" required>
+          <textarea rows="5" name="message" required placeholder="Descreva um pouco do seu projeto..."></textarea>
+          <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+        </form>
+
+        <!-- Detalhes de Contato -->
+        <div class="contact__details" data-aos="fade-left">
+          <p class="text">
+            Fale comigo, seja para iniciar um projeto ou para conversar sobre possibilidades digitais, estou aqui para
+            ouvir você.
+          </p>
+          <div class="details">
+            <div class="detail">
+              <div class="detail__icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="detail__content">
+                <h3>WhatsApp</h3>
+                <p>(47) 99216-4395</p>
+              </div>
+            </div>
+            <div class="detail">
+              <div class="detail__icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="detail__content">
+                <h3>Email</h3>
+                <p>contato@rmdeveloper.com.br</p>
+              </div>
+            </div>
+            <div class="detail">
+              <div class="detail__icon">
+                <i class="fas fa-map-marked-alt"></i>
+              </div>
+              <div class="detail__content">
+                <h3>Endereço</h3>
+                <p>Itajaí, Santa Catarina - Brasil</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer data-aos="fade-up">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__details">
+          <div class="footer__logo">
+            <img id="footer-logo-img" src="assets/img/logo.svg" alt="Logo">
+          </div>
+          <p class="footer__text">
+            Fique por dentro de tudo que acontece no mundo digital.
+          </p>
+          <div class="footer__newletter">
+            <form action="#" class="footer__newsletter-form">
+              <input type="email" placeholder="Seu melhor e-mail" required>
+              <div class="icon">
+                <i class="fa fa-envelope"></i>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer__menu">
+          <h3 class="footer__menu-title">Acesso rápido</h3>
+          <ul class="footer__menu-list">
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#team">Profissional</a></li>
+            <li><a href="#testimonials">Depoimentos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__menu">
+          <h3 class="footer__menu-title">Redes Sociais</h3>
+          <ul class="footer__menu-list">
+            <li><a href="https://www.instagram.com/riicardomoura/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com/ricardo.olszewski.3/" target="_blank">Facebook</a></li>
+            <li><a href="https://github.com/RicardoMouraa" target="_blank">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/ricardomouradev/" target="_blank">Linkedin</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-icons">
+          <p>Siga-me</p>
+          <a href="https://www.instagram.com/riicardomoura/" class="instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/ricardo.olszewski.3/" class="facebook" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://github.com/RicardoMouraa" class="github" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ricardomouradev/" class="linkedin" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <p>&copy; 2023 RM│DEVELOPER. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FONTAWESOME -->
+  <script src="assets/js/fontawesome.min.js"></script>
+
+  <!-- SCRIPTS -->
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/themeMode.js"></script>
+  <script src="assets/js/emailForm.js"></script>
+  <script src="assets/js/voltarTopo.js"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Inicialização do AOS -->
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
