@@ -2,6 +2,8 @@
 
 Este é o repositório do site RM Developer, uma plataforma digital onde apresento minhas habilidades e projetos como desenvolvedor web. O site é uma demonstração clara da minha abordagem ao desenvolvimento web, focando em design responsivo, interatividade e experiências de usuário otimizadas.
 
+![projeto-rm-dev](https://github.com/RicardoMouraa/rm-dev/assets/106688139/63694edc-138d-4d50-a791-d55ee6742309)
+
 ---
 
 ## Tecnologias e Ferramentas
